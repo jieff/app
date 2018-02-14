@@ -5,25 +5,32 @@
 
 def menu():
 	
+	print("***************************************************************** ")
 	print(" ")
-	print("Bemvindo a Calculadora")
+	print("                ..:: Bemvindo a Calculadora ::..")
 	print(" ")
 	print(" ")
-	op = int(input(''' Digite o numero da operação desejada:
+	
+	op = int(input('''      Digite o número da operação desejada:
 
 	***************************
 	| 1 - Soma                |
-	| 2 - Subtraçao           |
-	| 3 - Divisao             |
-	| 4 - Multiplicaçao       |
+	| 2 - Subtração           |
+	| 3 - Divisão             |
+	| 4 - Multiplicação       |
+	| 0 - Sair
 	***************************
-
+	
 	'''))
+	
+	print "***************************************************************** "
 
 #Metodo de escolha das operações
 
 	if op == 1:
 		soma()
+	elif op == 0:
+		quit()
 	else:
 		menu()
 
@@ -32,18 +39,24 @@ def menu():
 def soma():
 
 	print(" ")
-	num1 = float(input("Digite o primeiro numero: "))
+	num1 = float(input("Digite o primeiro número: "))
 	print (" ")
-	num2 = float(input("Digite o segundo numero: "))
+	num2 = float(input("Digite o segundo número: "))
 	resultado_soma = (num1 + num2)
 	print (" ")
-	print "O resultado da soma eh:",resultado_soma
-
+	print "                     O resultado da soma é: ",resultado_soma
+	print(" ")
+	print("*******************************************************************")
 	op = int(input('''
 
-	Para calcular novamente tecle: 1
-	Para voltar ao menu principal tecle 2
-	Para sair do aplicativo tecle 0
+	               >> Para calcular novamente tecle       : 1
+
+	               >> Para voltar ao menu principal tecle : 2
+
+	               >> Para sair do aplicativo tecle       : 0
+	
+**************************************************************************
+	
 	'''))
 
 
