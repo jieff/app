@@ -31,8 +31,26 @@ def menu():
 		soma()
 	elif op == 0:
 		quit()
+	elif op == 2:
+		subtrair()
 	else:
 		menu()
+	
+
+# SUBTRAIR
+def subtrair():
+	
+	print(" ")
+	num1 = float(input("Digite o primeiro número: "))
+	print(" ")
+	num2 = float(input("Digite o segundo número: "))
+	result_subtracao = (num1 - num2)
+	print(" ")
+	print "                     o resultado da subtração é: ",result_subtracao
+	print(" ")
+	print("********************************************************************")
+	
+	retorno()
 
 # SOMA
 
@@ -47,23 +65,23 @@ def soma():
 	print "                     O resultado da soma é: ",resultado_soma
 	print(" ")
 	print("*******************************************************************")
-	op = int(input('''
+	retorno()
 
-	               >> Para calcular novamente tecle       : 1
+# Define o retorno para o menu
+def retorno(): 
+ 	op = int(input('''
 
-	               >> Para voltar ao menu principal tecle : 2
+	               >> Para voltar ao menu principal tecle : 1
 
 	               >> Para sair do aplicativo tecle       : 0
 	
-**************************************************************************
+        **************************************************************************
 	
 	'''))
 
 
-	if op == 2:
+	if op == 1:
 		menu()
-	elif op == 1:
-		soma()
 	else:
 		quit()
 		
